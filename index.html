@@ -6,32 +6,27 @@
 </head>
 <body>
   <form action="">
-  <div>
+  <div class="form-row">
     <label for="adi">Adı</label>
-    <input type="text" name="adi" id="adi" required>
-  </div>
-
-  <div>
-    <label for="soyadi">Soyadı</label>
-    <input type="text" name="soyadi" id="soyadi" required>
+    <input type="text" name="adi" id="adi" required placeholder="Mete Durmazşen">
   </div>
   
-  <div>
+  <div class="form-row">
     <label for="tel">Telefon</label>
     <input type="tel" name="tel" id="tel"required>
   </div>
 
-  <div>
+  <div class="form-row">
     <label for="email">Email</label>
     <input type="email" name="email" id="email"required>
   </div>
   
-  <div>
+  <div class="form-row">
     <label for="mesaj">Mesaj</label>
     <textarea name="mesaj" id="mesaj" cols="30" rows="3"></textarea>
   </div>
   
-  <div>
+  <div class="form-row">
     <label for="sehir">Şehir</label>
     <select name="sehir" id="sehir">
       <option value="ankara">Ankara</option>
@@ -39,13 +34,13 @@
     </select>
   </div>
 
-  <div>
-    <label for="renk">Sevdiğiniz Renk</label>
-    <input type="radio" name="renk" value="yesil">Yeşil
-    <input type="radio" name="renk" value="siyah">Siyah
+  <div class="form-row">
+    <p>Sevdiğiniz Renk</p>
+    <label><input type="radio" name="renk" value="yesil">Yeşil</label>
+    <label><input type="radio" name="renk" value="siyah">Siyah</label>
   </div>
 
-  <div class="buttons">
+  <div class="form-row">
     <button type="reset">Sıfırla</button>
     <button type="submit">Gönder</button>
   </div>

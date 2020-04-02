@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <form action="">
+  <div>
+    <label for="adi">Adı</label>
+    <input type="text" name="adi" id="adi" required>
+  </div>
+
+  <div>
+    <label for="soyadi">Soyadı</label>
+    <input type="text" name="soyadi" id="soyadi" required>
+  </div>
+  
+  <div>
+    <label for="tel">Telefon</label>
+    <input type="tel" name="tel" id="tel"required>
+  </div>
+
+  <div>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email"required>
+  </div>
+  
+  <div>
+    <label for="mesaj">Mesaj</label>
+    <textarea name="mesaj" id="mesaj" cols="30" rows="3"></textarea>
+  </div>
+  
+  <div>
+    <label for="sehir">Şehir</label>
+    <select name="sehir" id="sehir">
+      <option value="ankara">Ankara</option>
+      <option value="istabul">İstabul</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="renk">Sevdiğiniz Renk</label>
+    <input type="radio" name="renk" value="yesil">Yeşil
+    <input type="radio" name="renk" value="siyah">Siyah
+  </div>
+
+  <div class="buttons">
+    <button type="reset">Sıfırla</button>
+    <button type="submit">Gönder</button>
+  </div>
+</form>
+</body>
+</html>

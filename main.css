@@ -54,7 +54,7 @@ select:focus{
   margin-bottom: 6px;   
 }
 textarea {
-  height: 60px !important;
+  height: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
   min-height: 42px;
@@ -94,5 +94,5 @@ button[type="reset"]{
 }
 
 button[type="submit"]{
-  background-color:  rgb(18, 105, 57, .8);
+  background-color:  rgb(18, 105, 57, .);
 }

@@ -1,5 +1,6 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 form{
@@ -12,19 +13,24 @@ form{
   margin-bottom: 20px;
 }
 
- input[type="text"],
- input[type="tel"],
- input[type="email"],
- textarea[id="mesaj"],select{
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+button,
+textarea {
   width: 100%;
   border-radius: 5px;
   height: 42px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  padding-right: 15px;
   padding-left: 15px;
+  padding-right: 15px;
   font-size: inherit;
   font-family: inherit;
- }
+  background-color: white;
+}
+
 
 
 input[type="text"]::placeholder,
@@ -37,17 +43,56 @@ textarea::placeholder{
 input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="email"]:focus,
-textarea:focus{
-  border-color: rgb(126, 55, 99);
+textarea:focus,
+select:focus{
+  border-color: rgb(18, 105, 57);
+  outline: none;
 } 
  
-
-
-.form-row  label{
+.form-row label{
   display: block;
-  margin-bottom: 6px;  
+  margin-bottom: 6px;   
 }
-textarea{
-  
+textarea {
+  height: 60px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 42px;
+  max-height: 200px;
+  resize: vertical;
+}
+select{
+  -webkit-appearance: none;
+  background: url("./images/Group(2).svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
 
+.radio-container label {
+  display: inline-block ;
+  margin-bottom: 0px;
+}
+
+.radio-container label + label {
+  margin-left: 20px;
+} 
+
+.form-row button{
+  width: 30%;
+  width: auto;
+  border: none;
+}
+.form-row button + button{
+  margin-left: 20px;
+}
+.reset{
+  background-color: efef;
+}
+
+button[type="reset"]{
+  background-color:  #eee;;
+}
+
+button[type="submit"]{
+  background-color:  rgb(18, 105, 57, .8);
 }
